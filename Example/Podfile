@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'DUNotificationBanner_Example' do
+  pod 'DUNotificationBanner', :path => '../'
+
+  target 'DUNotificationBanner_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
