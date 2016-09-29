@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
   s.name             = 'DUNotificationBanner'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'A drop-in-solution to present banner notifications in any UIViewController.'
   s.description      = <<-DESC
-                        A drop-in-solution to present banner notifications in any UIViewController.
+                        Use this pod to display in app notifications in real time, it just works!.
                        DESC
   s.homepage         = 'https://github.com/<GITHUB_USERNAME>/DUNotificationBanner'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
