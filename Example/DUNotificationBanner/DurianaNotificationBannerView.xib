@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="DurianaNotificationBannerView" customClass="DurianaNotificationBannerView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="888" verticalHuggingPriority="888" image="icon-maintenance-duriana-smile" translatesAutoresizingMaskIntoConstraints="NO" id="hng-TA-RHt" userLabel="imageView">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="iVt-tD-pbP"/>
+                        <constraint firstAttribute="height" constant="40" id="v85-0m-V1d"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tkf-uV-pFj" userLabel="messageView">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Are your friends on Duriana?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" preferredMaxLayoutWidth="212" translatesAutoresizingMaskIntoConstraints="NO" id="Ey5-pM-0qe" userLabel="titleLabel">
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="15" id="qoV-C7-UY2"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Tap to find your social friends" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" preferredMaxLayoutWidth="212" translatesAutoresizingMaskIntoConstraints="NO" id="u1g-7c-6Ta" userLabel="messageLabel">
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="15" id="siJ-ul-WaW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="u1g-7c-6Ta" firstAttribute="top" secondItem="Ey5-pM-0qe" secondAttribute="bottom" id="6lD-U6-PCh"/>
+                        <constraint firstAttribute="trailing" secondItem="Ey5-pM-0qe" secondAttribute="trailing" id="LAP-wM-Xw6"/>
+                        <constraint firstItem="Ey5-pM-0qe" firstAttribute="leading" secondItem="tkf-uV-pFj" secondAttribute="leading" id="S8B-IK-qtb"/>
+                        <constraint firstItem="Ey5-pM-0qe" firstAttribute="top" secondItem="tkf-uV-pFj" secondAttribute="top" id="cfK-J4-fZg"/>
+                        <constraint firstAttribute="bottom" secondItem="u1g-7c-6Ta" secondAttribute="bottom" id="lbR-qa-637"/>
+                        <constraint firstItem="u1g-7c-6Ta" firstAttribute="leading" secondItem="tkf-uV-pFj" secondAttribute="leading" id="pFw-sY-KZ4"/>
+                        <constraint firstAttribute="trailing" secondItem="u1g-7c-6Ta" secondAttribute="trailing" id="x2n-7l-Mvy"/>
+                        <constraint firstItem="u1g-7c-6Ta" firstAttribute="top" secondItem="Ey5-pM-0qe" secondAttribute="bottom" id="z9L-sh-6UW"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="6lD-U6-PCh"/>
+                        </mask>
+                    </variation>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnw-KO-lEo" userLabel="closeButton">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="6Hy-hf-Wje"/>
+                        <constraint firstAttribute="height" constant="50" id="d7Y-a1-hLW"/>
+                    </constraints>
+                    <state key="normal" image="icon-close-transparent"/>
+                    <connections>
+                        <action selector="closeButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="0Gg-g7-jJm"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.086274509799999996" green="0.66666666669999997" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="tkf-uV-pFj" secondAttribute="centerY" id="AC4-GQ-eQg"/>
+                <constraint firstItem="hng-TA-RHt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="LDE-dO-UV9"/>
+                <constraint firstAttribute="trailing" secondItem="tnw-KO-lEo" secondAttribute="trailing" id="QcL-il-XkI"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="tkf-uV-pFj" secondAttribute="bottom" constant="8" id="f91-FZ-4Wz"/>
+                <constraint firstItem="tnw-KO-lEo" firstAttribute="leading" secondItem="tkf-uV-pFj" secondAttribute="trailing" constant="-2" id="gxa-Sn-1pd"/>
+                <constraint firstAttribute="centerY" secondItem="tnw-KO-lEo" secondAttribute="centerY" id="h8F-Vp-RLd"/>
+                <constraint firstAttribute="centerY" secondItem="hng-TA-RHt" secondAttribute="centerY" id="hXj-nD-vYA"/>
+                <constraint firstItem="tkf-uV-pFj" firstAttribute="top" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="ssG-km-D2g"/>
+                <constraint firstItem="tkf-uV-pFj" firstAttribute="leading" secondItem="hng-TA-RHt" secondAttribute="trailing" constant="20" id="ulK-x2-7IP"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="closeButton" destination="tnw-KO-lEo" id="ZMD-YI-GPx"/>
+                <outlet property="imageView" destination="hng-TA-RHt" id="WTM-9P-ygg"/>
+                <outlet property="messageLabel" destination="u1g-7c-6Ta" id="lfD-7A-fTQ"/>
+                <outlet property="titleLabel" destination="Ey5-pM-0qe" id="I4u-VN-TQn"/>
+            </connections>
+            <point key="canvasLocation" x="-143" y="-98"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon-close-transparent" width="15" height="15"/>
+        <image name="icon-maintenance-duriana-smile" width="88" height="118"/>
+    </resources>
+</document>

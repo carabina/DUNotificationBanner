@@ -7,23 +7,28 @@
 //
 
 #import "DUViewController.h"
+#import "DurianaNotificationBannerView.h"
 
-@interface DUViewController ()
-
-@end
+@import DUNotificationBanner;
 
 @implementation DUViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    self.title = @"Hello Banners!";
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)showNewBanner:(id)sender {
+    DurianaNotificationBannerView *bannerView = [[NSBundle.mainBundle loadNibNamed:@"DurianaNotificationBannerView" owner:nil options:nil] objectAtIndex:0];
+    bannerView.lifetime = arc4random_uniform(5);
+    bannerView.interactionBlock = ^{
+        NSLog(@"Interacted!");
+    };
+    bannerView.closeBlock = ^{
+        NSLog(@"Closed!");
+    };
+    [[DUNotificationBannerPresentationManager sharedManager] showBannerView:bannerView onViewController:self];
 }
 
 @end

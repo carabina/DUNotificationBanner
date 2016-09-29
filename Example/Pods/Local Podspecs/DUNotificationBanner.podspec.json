@@ -1,0 +1,28 @@
+{
+  "name": "DUNotificationBanner",
+  "version": "1.0.0",
+  "summary": "A drop-in-solution to present banner notifications in any UIViewController.",
+  "description": "A drop-in-solution to present banner notifications in any UIViewController.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/DUNotificationBanner",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "essame": "essam.a0@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/duriana/DUNotificationBanner.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "DUNotificationBanner/Classes/**/*",
+  "public_header_files": "Pod/Classes/**/*.h",
+  "dependencies": {
+    "TTLayoutSupport": [
+      "~> 0.4.0"
+    ]
+  }
+}

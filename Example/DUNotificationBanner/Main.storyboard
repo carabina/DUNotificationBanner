@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ve1-XW-SKu">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,14 +14,73 @@
                         <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am a label inside the view and I will NOT be covered by the banner :)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yAW-5J-zai">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="Itp-Xj-zkm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-maintenance-duriana-smile" translatesAutoresizingMaskIntoConstraints="NO" id="qrV-ZD-sBe">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="EPY-5v-7Zi"/>
+                                    <constraint firstAttribute="height" constant="118" id="n9l-le-LAU"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QdI-p5-b5w">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="I9i-gv-sbA"/>
+                                    <constraint firstAttribute="width" constant="200" id="lZe-OB-VVG"/>
+                                </constraints>
+                                <state key="normal" title="Present me a banner">
+                                    <color key="titleColor" red="0.086274509799999996" green="0.66666666669999997" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showNewBanner:" destination="whP-gf-Uak" eventType="touchUpInside" id="e0t-8j-75x"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Mvr-aV-6Um" firstAttribute="top" secondItem="QdI-p5-b5w" secondAttribute="bottom" constant="20" id="9cm-1c-H1D"/>
+                            <constraint firstItem="yAW-5J-zai" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="16" id="OFT-1J-gGd"/>
+                            <constraint firstItem="qrV-ZD-sBe" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="XRp-eq-Z5A"/>
+                            <constraint firstAttribute="trailing" secondItem="yAW-5J-zai" secondAttribute="trailing" constant="16" id="Z3y-Eg-FEA"/>
+                            <constraint firstItem="qrV-ZD-sBe" firstAttribute="top" secondItem="yAW-5J-zai" secondAttribute="bottom" constant="22" id="hJz-OM-BhL"/>
+                            <constraint firstItem="yAW-5J-zai" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="20" id="mY6-XF-shC"/>
+                            <constraint firstItem="QdI-p5-b5w" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="yOk-ce-geT"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="9Sz-OX-Fqn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="433"/>
+            <point key="canvasLocation" x="1244" y="432.23388305847078"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fwX-V4-wAW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ve1-XW-SKu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="CWJ-o2-hId">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="whP-gf-Uak" kind="relationship" relationship="rootViewController" id="egc-i1-9cn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lTj-fy-Yse" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.80000000000001" y="432.23388305847078"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon-maintenance-duriana-smile" width="88" height="118"/>
+    </resources>
 </document>
