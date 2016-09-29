@@ -12,10 +12,10 @@
 		47E952C96718E564B6C591C62CA96079 /* TTLayoutSupport.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 288D9AC0608D7109B568964CD44AAC59 /* TTLayoutSupport.bundle */; };
 		48AC594C7E6CE6080CD8E21DA1CDC74A /* TTLayoutSupport-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E3F11CED641ECA383BA25E66029DF4 /* TTLayoutSupport-dummy.m */; };
 		5268FC3DD3195A2FF0CBACF21D31F293 /* TTLayoutSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F67C19BB51CD651DA3C71ADDF3A081E /* TTLayoutSupport.framework */; };
-		613C2DC53806323A5DCF4C2096E52052 /* UIViewController+DUNotificationBanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 004D0FE9F6715313A28C404DB49E9C5C /* UIViewController+DUNotificationBanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6583A025314361C8274EDDB7B4D84D47 /* DUNotificationBannerPresentationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32BE04CE20B78357AFD25D7E19C7EF49 /* DUNotificationBannerPresentationManager.m */; };
 		6B845114E5E0B761FDE80992A4588D27 /* DUNotificationBanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51CABA212C26ACEDEA60C60093260C50 /* DUNotificationBanner-dummy.m */; };
 		6F4FCDBC5FE043C8B2825B962B4739CB /* DUNotificationBannerPresentationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E5F25A794CB3D2AD3AB41E21EEF3838 /* DUNotificationBannerPresentationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E4B3D3721E6EDB637AF271A559A913D /* UIViewController+DUNotificationBanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 004D0FE9F6715313A28C404DB49E9C5C /* UIViewController+DUNotificationBanner.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		7E89FEAF20250C24DE08F47055FF3B7C /* TTLayoutGuide.h in Headers */ = {isa = PBXBuildFile; fileRef = DDE9901F6C63FAAD3C85DBDA38D888B2 /* TTLayoutGuide.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8B1A475AD6D4FFFA14A852C9287CCFA6 /* UIViewController+TTLayoutSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 67093B2CB03AE153C4B4E25FE734E1ED /* UIViewController+TTLayoutSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B1DCEC96FD5EB6DD040CD275FFF62F4A /* Pods-DUNotificationBanner_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CDF25CA357F1F9920565AED439F7FAE /* Pods-DUNotificationBanner_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -297,7 +297,7 @@
 			files = (
 				3F2CEA5395E09A3ACF60297FD5E77E58 /* DUNotificationBanner-umbrella.h in Headers */,
 				6F4FCDBC5FE043C8B2825B962B4739CB /* DUNotificationBannerPresentationManager.h in Headers */,
-				613C2DC53806323A5DCF4C2096E52052 /* UIViewController+DUNotificationBanner.h in Headers */,
+				7E4B3D3721E6EDB637AF271A559A913D /* UIViewController+DUNotificationBanner.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

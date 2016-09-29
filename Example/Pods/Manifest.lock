@@ -1,5 +1,5 @@
 PODS:
-  - DUNotificationBanner (1.0.0):
+  - DUNotificationBanner (1.0.4):
     - TTLayoutSupport (~> 0.4.0)
   - TTLayoutSupport (0.4.0)
 
@@ -11,7 +11,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DUNotificationBanner: 692fbdc704a89b228104d82a3f6f2b4a1c2e57d2
+  DUNotificationBanner: 47aa256963f1110a5cdd2db9e1dd06b8eb688a80
   TTLayoutSupport: 2457dbe68c5c530e68eeda1c8d168311c271e7e7
 
 PODFILE CHECKSUM: dc24d2a79125e8ea91f23c9c29d81eb88c8f1789
