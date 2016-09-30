@@ -1,7 +1,7 @@
 # DUNotificationBanner
 A drop-in-solution to present banner notifications in any UIViewController.
 
-Use this pod to display in app notifications in real time it, the source of the notifications doesn't matter, it can be from API or from scehduled events, it just works!.
+Use this pod to display **multiple** in app notifications in real time it, the source of the notifications doesn't matter, it can be from API or from scehduled events, it just works!.
 
 This repository is maintained by the Duriana team at Duriana Internet.
 
@@ -45,7 +45,7 @@ it simply add the following line to your Podfile:
 ### How to Try it out
 ---
 
-In the demo project there is a class `DurianaNotificationBannerView` which add some neat functionalities like,
+In the demo project there is a class `DurianaNotificationBannerView` which adds some neat functionalities like,
 - Interaction callback
 - Closing callback
 - Closing timer
