@@ -10,7 +10,7 @@ This repository is maintained by the Duriana team at Duriana Internet.
 
 Minimum iOS Target: iOS 9.0
 
-### Demo
+### Demo Project Included
 ---
 
 <img src="https://d17oy1vhnax1f7.cloudfront.net/items/2R2n2c1I1C2E2Y3X1z2b/s1.png" width="300px"/>
