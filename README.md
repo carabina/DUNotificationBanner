@@ -14,6 +14,12 @@ Minimum iOS Target: iOS 9.0
 
 Minimum Xcode Version: Xcode 9.0
 
+<img src="https://d17oy1vhnax1f7.cloudfront.net/items/2R2n2c1I1C2E2Y3X1z2b/s1.png" width="300px"/>
+
+<img src="https://d17oy1vhnax1f7.cloudfront.net/items/1o2z091r2Y14443D3D2Y/s2.png" width="300px"/>
+
+<img src="https://d17oy1vhnax1f7.cloudfront.net/items/1O012V0E153m3y380Q3P/s3.png" width="300px"/>
+
 ### Installation
 ---
 
