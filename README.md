@@ -6,10 +6,7 @@ Use this pod to display in app notifications in real time it, the source of the 
 This repository is maintained by the Duriana team at Duriana Internet.
 
 ### Requirements
-[![Platform iOS](https://img.shields.io/badge/Platform-iOS-blue.svg?style=fla)]()
-
-### DUNotificationBanner
-[![Objective-c](https://img.shields.io/badge/Language-Objective C-blue.svg?style=flat)](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html)
+[![Platform iOS](https://img.shields.io/badge/Platform-iOS-blue.svg?style=fla)]() [![Objective-c](https://img.shields.io/badge/Language-Objective C-blue.svg?style=flat)](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html)
 
 Minimum iOS Target: iOS 9.0
 
