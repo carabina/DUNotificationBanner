@@ -47,14 +47,14 @@ In the demo project there is a class `DurianaNotificationBannerView` which add s
 
 ```objc
 DurianaNotificationBannerView *bannerView = [[NSBundle.mainBundle loadNibNamed:@"DurianaNotificationBannerView" owner:nil options:nil] objectAtIndex:0];
-    bannerView.lifetime = arc4random_uniform(5);
-    bannerView.interactionBlock = ^{
-        NSLog(@"Interacted!");
-    };
-    bannerView.closeBlock = ^{
-        NSLog(@"Closed!");
-    };
-    [[DUNotificationBannerPresentationManager sharedManager] showBannerView:bannerView onViewController:self];
+bannerView.lifetime = arc4random_uniform(5);
+bannerView.interactionBlock = ^{
+    NSLog(@"Interacted!");
+};
+bannerView.closeBlock = ^{
+    NSLog(@"Closed!");
+};
+[[DUNotificationBannerPresentationManager sharedManager] showBannerView:bannerView onViewController:self];
 ```
 
 ### TODO
