@@ -46,6 +46,7 @@ In the demo project there is a class `DurianaNotificationBannerView` which add s
 - Closing timer
 
 ```objc
+
 DurianaNotificationBannerView *bannerView = [[NSBundle.mainBundle loadNibNamed:@"DurianaNotificationBannerView" owner:nil options:nil] objectAtIndex:0];
 bannerView.lifetime = arc4random_uniform(5);
 bannerView.interactionBlock = ^{
@@ -55,6 +56,7 @@ bannerView.closeBlock = ^{
     NSLog(@"Closed!");
 };
 [[DUNotificationBannerPresentationManager sharedManager] showBannerView:bannerView onViewController:self];
+
 ```
 
 ### TODO
